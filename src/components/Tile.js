@@ -16,8 +16,8 @@ const styles = {
         border: "5px solid black",
         display: "inline-block",
         margin: "3px",
-        width: 100,
-        height: 100,
+        flex: '0 1 100px',
+        boxSizing: 'border-box'
     },
     on: {
         backgroundColor: 'white',

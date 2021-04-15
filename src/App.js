@@ -86,7 +86,7 @@ function App() {
 
   return (
     <div style={styles.wrapper}>
-      <div>
+      <div style={styles.container}>
         <Board
           board={board}
           toggleTiles={toggleTiles}
@@ -110,6 +110,12 @@ function App() {
 }
 
 const styles = {
+  container: {
+    width: '100%',
+    maxWidth: `${BOARD_WIDTH > 7 ? '700' : BOARD_WIDTH * 100}px`,
+    height: '100%',
+    maxHeight: `${BOARD_HEIGHT > 7 ? '700' : BOARD_HEIGHT * 100}px`,
+  },
   restartButton: {
     float: 'right',
     backgroundColor: 'white',
