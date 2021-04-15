@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Board from './components/Board';
 import Modal from './components/Modal';
 import Counter from './components/Counter';
+import { getByPlaceholderText } from '@testing-library/dom';
 
 
 const BOARD_WIDTH=5;
@@ -110,14 +111,19 @@ function App() {
 
 const styles = {
   restartButton: {
-    float: "right"
+    float: 'right',
+    backgroundColor: 'white',
+    border: '3px solid black',
+    borderRadius: '5px',
+    fontWeight: '700',
+    fontSize: '14px',
   },
   wrapper: {
-    display: "flex",
-    width: "100vw",
-    height: "100vh",
-    justifyContent: "center",
-    alignItems: "center"
+    display: 'flex',
+    width: '100vw',
+    height: '100vh',
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 }
 

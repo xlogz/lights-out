@@ -5,7 +5,8 @@ const Counter = ({count}) => {
 const styles = {
     counter: {
         display: 'inline-block',
-        width: '50%'
+        width: '50%',
+        fontWeight: '700'
     }
 }
 
