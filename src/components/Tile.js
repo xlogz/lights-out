@@ -1,6 +1,13 @@
-const Tile = (props) => {
+const Tile = ({on, x, y}) => {
+    const handleClick = () =>{
+        console.log(`${x} ${y}`);
+        
+    }
     return (
-        <div style={ props.on ? {...styles.on, ...styles.tile} : {...styles.off, ...styles.tile} }></div>
+        <div 
+            style={ on ? {...styles.on, ...styles.tile} : {...styles.off, ...styles.tile} }
+            onClick={handleClick}
+        ></div>
     )
 }
 

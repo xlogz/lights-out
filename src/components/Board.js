@@ -2,9 +2,14 @@ import Tile from './Tile';
 
 const Board = (props) =>{
     return (
-        props.board.map((row)=>{
-            const newRow = row.map((isOn)=>{
-                return <Tile on={isOn}/>
+        props.board.map((row,y)=>{
+            const newRow = row.map((isOn,x)=>{
+                return (<Tile 
+                    on={isOn}
+                    x={x}
+                    y={y}
+                    key={`${x} ${y}`}
+                    />)
             });
             return (<div style={styles.row}>{newRow}</div>)
         })
