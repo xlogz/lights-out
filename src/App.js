@@ -24,10 +24,16 @@ function App() {
     return board;
   }
 
+  function updateIndividualTile(originalBoard, x, y){
+    originalBoard[y][x] = !originalBoard[y][x];
+    console.log(originalBoard);
+  }
+
 
   return (
     <Board
       board={board}
+      updateIndividualTile={updateIndividualTile}
     />
   );
 }

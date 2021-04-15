@@ -9,9 +9,11 @@ const Board = (props) =>{
                     x={x}
                     y={y}
                     key={`${x} ${y}`}
+                    updateIndividualTile={props.updateIndividualTile}
+                    board={props.board}
                     />)
             });
-            return (<div style={styles.row}>{newRow}</div>)
+            return (<div key={`${y}`} style={styles.row}>{newRow}</div>)
         })
     )
 }
