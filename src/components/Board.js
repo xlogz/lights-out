@@ -9,7 +9,7 @@ const Board = (props) =>{
                     x={x}
                     y={y}
                     key={`${x} ${y}`}
-                    updateIndividualTile={props.updateIndividualTile}
+                    toggleTiles={props.toggleTiles}
                     board={props.board}
                     />)
             });

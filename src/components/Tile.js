@@ -1,8 +1,8 @@
-const Tile = ({on, x, y, updateIndividualTile, board}) => {
+const Tile = ({on, x, y, toggleTiles, board}) => {
     const handleClick = () =>{
-        updateIndividualTile(board, x, y);
+        toggleTiles(board, x, y);
     }
-    
+
     return (
         <div 
             style={ on ? {...styles.on, ...styles.tile} : {...styles.off, ...styles.tile} }
