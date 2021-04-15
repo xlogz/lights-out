@@ -10,6 +10,10 @@ function App() {
 
   const [ board, setBoard ] = useState(createBoard(BOARD_WIDTH, BOARD_HEIGHT));
 
+  useEffect( ()=>{
+
+  },[board])
+
   function createBoard(w,h){
     const board = [];
     let newRow = [];
@@ -26,7 +30,9 @@ function App() {
 
   function updateIndividualTile(originalBoard, x, y){
     originalBoard[y][x] = !originalBoard[y][x];
-    console.log(originalBoard);
+    const newBoard = [...originalBoard];
+  
+    setBoard(newBoard);
   }
 
 

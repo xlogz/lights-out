@@ -2,7 +2,7 @@ const Tile = ({on, x, y, updateIndividualTile, board}) => {
     const handleClick = () =>{
         updateIndividualTile(board, x, y);
     }
-
+    
     return (
         <div 
             style={ on ? {...styles.on, ...styles.tile} : {...styles.off, ...styles.tile} }
