@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import Board from './components/Board'
 import './App.css';
 
@@ -6,6 +6,9 @@ const BOARD_WIDTH=5;
 const BOARD_HEIGHT=5;
 
 function App() {
+
+
+  const [ board, setBoard ] = useState(createBoard(BOARD_WIDTH, BOARD_HEIGHT));
 
   function createBoard(w,h){
     const board = [];
@@ -21,9 +24,10 @@ function App() {
     return board;
   }
 
+
   return (
     <Board
-      board={createBoard(BOARD_WIDTH,BOARD_HEIGHT)}
+      board={board}
     />
   );
 }
