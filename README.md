@@ -3,10 +3,14 @@
 ## Instructions to run a local version
 
 
-    1. Clone the repo into a local directory
-    2. cd into directory
-    3. Type in "yarn install"
-    4. Let yarn install node_modules
-    5. Type "yarn run start" to launch the application
+1. Open up a terminal/command prompt and go to the folder you want to download the repository to
+2. Clone the repo
+    git clone https://github.com/xlogz/lights-out.git (HTTPS)
+        or
+    git clone git@github.com:xlogz/lights-out.git (SSH)
+3. cd into directory (lights-out)
+4. Type in "yarn install"
+5. Let yarn install packages into node_modules folder
+6. Type "yarn run start" to launch the application
 
 
